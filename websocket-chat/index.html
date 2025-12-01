@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WebSocket Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>WebSocket Chat</h1>
+
+  <div id="connection-status">Connecting…</div>
+
+  <div id="username-container">
+    <label>
+      Username:
+      <input id="username" type="text" placeholder="Enter username">
+    </label>
+  </div>
+
+  <div id="chat-container">
+    <div id="messages"></div>
+
+    <form id="publish">
+      <input
+        name="message"
+        id="message-input"
+        type="text"
+        placeholder="Type a message..."
+        autocomplete="off"
+        required
+      >
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
